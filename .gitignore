@@ -20,6 +20,7 @@ target/
 database.properties
 .idea/sqldialects.xml
 .idea/
+hibernate.properties
 
 ### Eclipse ###
 .apt_generated
