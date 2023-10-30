@@ -14,17 +14,17 @@ public class Book {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @NotEmpty(message = "Название книги не должно быть пустым")
-    @Size(min = 2, max = 100, message = "Название книги должно быть от 2 до 100 символов длиной")
+    @NotEmpty(message = "The book title must not be empty")
+    @Size(min = 2, max = 100, message = "The book title should be between 2 and 100 characters in length")
     @Column(name = "title")
     private String title;
 
-    @NotEmpty(message = "Автор не должен быть пустым")
-    @Size(min = 2, max = 100, message = "Имя автора должно быть от 2 до 100 символов длиной")
+    @NotEmpty(message = "The author must not be empty")
+    @Size(min = 2, max = 100, message = "The author's name must be between 2 and 100 characters in length")
     @Column(name = "author")
     private String author;
 
-    @Min(value = 1500, message = "Год должен быть больше, чем 1500")
+    @Min(value = 1500, message = "The year must be greater than 1500")
     @Column(name = "year")
     private int year;
 
